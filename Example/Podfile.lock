@@ -1,0 +1,16 @@
+PODS:
+  - FastBlurView (0.1.0)
+
+DEPENDENCIES:
+  - FastBlurView (from `../`)
+
+EXTERNAL SOURCES:
+  FastBlurView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FastBlurView: f51da9113e1a25f7759527176e9de061a37246d3
+
+PODFILE CHECKSUM: 02d13586e5a1e08edd6e6b95b9fe748195794764
+
+COCOAPODS: 1.10.1
