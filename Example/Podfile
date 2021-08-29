@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'FastBlurView_Example' do
+  pod 'FastBlurView', :path => '../'
+
+  target 'FastBlurView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
