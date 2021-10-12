@@ -12,11 +12,17 @@ import MetalKit
 import MetalPerformanceShaders
 
 public class FastBlurView: MTKView, MTKViewDelegate {
+    public var continuous: Bool = false // if set, blur view will refresh content in a while
     var blurTarget: UIView?
     var bluredImage: UIImage?
     var sigma: Float = 10.0
     var commandQueue: MTLCommandQueue?
     var displayLink: CADisplayLink?
+
+    init(frame: CGRect) {
+        super.init(frame: frame, device: MTLCreateSystemDefaultDevice())
+        commonInit()
+    }
     
     public override init(frame: CGRect, device: MTLDevice?) {
         super.init(frame: frame, device: device)
@@ -62,13 +68,17 @@ public class FastBlurView: MTKView, MTKViewDelegate {
     open override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         self.blurTarget = newSuperview
-        registerDisplaylink()
+        if continuous {
+            registerDisplaylink()
+        } else {
+            drawBlurEffect()
+        }
         print("view bounds: \(bounds)")
     }
     
     private func registerDisplaylink() {
         displayLink = CADisplayLink.init(target: self, selector: #selector(triggerDisplayLink))
-        displayLink?.add(to: .main, forMode: .commonModes)
+        displayLink?.add(to: .main, forMode: RunLoopMode.commonModes)
     }
     
     @objc private func triggerDisplayLink() {

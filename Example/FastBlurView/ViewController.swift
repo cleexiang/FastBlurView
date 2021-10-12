@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         bgImageView.image = image
 
         let blurView = FastBlurView(frame: CGRect(x: 0, y: 100, width: 300, height: 200), device: MTLCreateSystemDefaultDevice())
+        blurView.continuous = true
         view.addSubview(blurView)
                 
         timer = Timer(timeInterval: 1, repeats: true, block: { [weak self] _ in

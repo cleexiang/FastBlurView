@@ -5,6 +5,18 @@
 [![License](https://img.shields.io/cocoapods/l/FastBlurView.svg?style=flat)](https://cocoapods.org/pods/FastBlurView)
 [![Platform](https://img.shields.io/cocoapods/p/FastBlurView.svg?style=flat)](https://cocoapods.org/pods/FastBlurView)
 
+## Screenshot
+![Alt text](./Screenshots/fastblur.gif "Optional Title")
+
+
+## Easy to use
+* If you want to continuously refresh the blur effect with the content below the view, set continuous to true.
+```
+    let blurView = FastBlurView(frame: CGRect(x: 0, y: 100, width: 300, height: 200), device: MTLCreateSystemDefaultDevice())
+    blurView.continuous = true
+    view.addSubview(blurView)
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
