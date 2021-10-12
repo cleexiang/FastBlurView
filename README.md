@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/FastBlurView.svg?style=flat)](https://cocoapods.org/pods/FastBlurView)
 
 ## Screenshot
-![Alt text](./Screenshots/fastblur.gif "Optional Title")
+![Alt text](./Screenshots/fastblur.gif =582x1266)
 
 
 ## Easy to use
