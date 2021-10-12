@@ -6,8 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/FastBlurView.svg?style=flat)](https://cocoapods.org/pods/FastBlurView)
 
 ## Screenshot
-![Alt text](./Screenshots/fastblur.gif =582x1266)
-
+<img src="./Screenshots/fastblur.gif" alt="" width="292" height="633"/>
 
 ## Easy to use
 * If you want to continuously refresh the blur effect with the content below the view, set continuous to true.
