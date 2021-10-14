@@ -78,7 +78,7 @@ public class FastBlurView: MTKView, MTKViewDelegate {
     
     private func registerDisplaylink() {
         displayLink = CADisplayLink.init(target: self, selector: #selector(triggerDisplayLink))
-        displayLink?.add(to: .main, forMode: RunLoopMode.commonModes)
+        displayLink?.add(to: .main, forMode: RunLoop.Mode.common)
     }
     
     @objc private func triggerDisplayLink() {
