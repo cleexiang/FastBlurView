@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             self.bgImageView.image = UIImage(named: "sample\(self.index).jpg")
             self.index += 1
         })
-        RunLoop.current.add(timer!, forMode: .commonModes)
+        RunLoop.current.add(timer!, forMode: RunLoop.Mode.common)
     }
 }
 

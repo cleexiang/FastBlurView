@@ -1,5 +1,5 @@
 PODS:
-  - FastBlurView (0.1.0)
+  - FastBlurView (0.1.1)
 
 DEPENDENCIES:
   - FastBlurView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FastBlurView: f51da9113e1a25f7759527176e9de061a37246d3
+  FastBlurView: 460b1a2a0cfcb319a5012ab7724354290616e806
 
 PODFILE CHECKSUM: 02d13586e5a1e08edd6e6b95b9fe748195794764
 
